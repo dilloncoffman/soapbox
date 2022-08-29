@@ -1,14 +1,32 @@
 {
-  "Post": {
-    "title": { "string": {} },
-    "comments": {
-      "hasMany": "Comment"
+  "BarSoap": {
+    "name": { "string": ["Teyer's", "Barz", "Sudz"] },
+    "image": {
+      "string": [
+        "http://cdn.shopify.com/s/files/1/1704/0849/products/DishBar.jpg?v=1607707255",
+        "https://cdn.shopify.com/s/files/1/1795/6929/products/GiftsForTheJourney_BarSoap_CalmingLavender_Unpackaged_1800x1800.jpg?v=1601572593",
+        "https://media.istockphoto.com/photos/moisturizing-soap-bar-picture-id1337091069?b=1&k=20&m=1337091069&s=170667a&w=0&h=1QgYEQA0H07oUh8nBdLL-TarjKQRS8bmlIsq4DNJtyw=",
+        "https://www.lootnerd.com/storage/products/April2018/2CpAZ2Gb0leTto3v3Hmy.jpg",
+        "https://pyxis.nymag.com/v1/imgs/957/9ae/68c6924a91715c39dc55ffcd8cb9348e4b-soap-lede.rsocial.w1200.jpg",
+        "https://cdnimg.webstaurantstore.com/images/products/large/611962/2204457.jpg",
+        "https://cdn.shopify.com/s/files/1/0064/1974/2773/products/Herbivore_EmeraldCBD_Soap_Main.jpg?v=1587148308",
+        "https://cdn11.bigcommerce.com/s-t0urwum501/images/stencil/500x500/products/2927/1401/apioq4yrk__35299.1605892049.jpg?c=2"
+      ]
     }
   },
-  "Comment": {
-    "body": { "string": {} },
-    "post": {
-      "belongsTo": "Post"
+  "LiquidSoap": {
+    "name": { "string": ["Polmoliv", "Cleanz", "Yawn"] },
+    "image": {
+      "string": [
+        "https://thethingswellmake.com/wp-content/uploads/2016/06/219-diy-homemade-liquid-coconut-oil-soap-recipe-4-2.jpg",
+        "https://cdn2.vectorstock.com/i/1000x1000/48/31/dispenser-liquid-soap-iconrealistic-vector-30564831.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNk7ckO8xp8iind97_uYuP-id81tEdcB4GtkCHtQNJFzIVD17RUXWlk-nFoJmOhH8fxg&usqp=CAU",
+        "https://resources.cleanitsupply.com/LARGE/USSCO/607380.JPG",
+        "https://static6.depositphotos.com/1003860/666/i/450/depositphotos_6664343-stock-photo-soap-liquid-and-bars.jpg",
+        "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/amp/amp00030/l/23.jpg",
+        "https://cdn.shopify.com/s/files/1/2281/5333/products/1-Soap-M_650x650.jpg?v=1586073255",
+        "https://cdn.shopify.com/s/files/1/0550/5646/5954/products/LiquidSoap_FrangipaniGardenia_1_147cbe1d-935a-41e2-a6ba-5c550005cd3d_2048x.jpg?v=1649131242"
+      ]
     }
   }
 }
