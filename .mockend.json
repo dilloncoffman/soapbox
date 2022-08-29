@@ -1,6 +1,6 @@
 {
-  "Test": {
-    "name": { "string": ["Teyer's", "Barz", "Sudz"] },
+  "Bar": {
+    "name": { "regexp": "[A-Z][a-z]{5,10}Bar" },
     "image": {
       "string": [
         "http://cdn.shopify.com/s/files/1/1704/0849/products/DishBar.jpg?v=1607707255",
@@ -12,10 +12,17 @@
         "https://cdn.shopify.com/s/files/1/0064/1974/2773/products/Herbivore_EmeraldCBD_Soap_Main.jpg?v=1587148308",
         "https://cdn11.bigcommerce.com/s-t0urwum501/images/stencil/500x500/products/2927/1401/apioq4yrk__35299.1605892049.jpg?c=2"
       ]
+    },
+    "isBarOfSoap": true,
+    "description": {
+      "loremParagraphs": {
+        "minLength": 10,
+        "maxLength": 100
+      }
     }
   },
-  "What": {
-    "name": { "string": ["Polmoliv", "Cleanz", "Yawn"] },
+  "Liquid": {
+    "name": { "regexp": "[A-Z][a-z]{5,10}Liquid" },
     "image": {
       "string": [
         "https://thethingswellmake.com/wp-content/uploads/2016/06/219-diy-homemade-liquid-coconut-oil-soap-recipe-4-2.jpg",
@@ -27,6 +34,13 @@
         "https://cdn.shopify.com/s/files/1/2281/5333/products/1-Soap-M_650x650.jpg?v=1586073255",
         "https://cdn.shopify.com/s/files/1/0550/5646/5954/products/LiquidSoap_FrangipaniGardenia_1_147cbe1d-935a-41e2-a6ba-5c550005cd3d_2048x.jpg?v=1649131242"
       ]
+    },
+    "isBarOfSoap": false,
+    "description": {
+      "loremParagraphs": {
+        "minLength": 25,
+        "maxLength": 150
+      }
     }
   }
 }
