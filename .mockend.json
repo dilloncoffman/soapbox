@@ -1,5 +1,5 @@
 {
-  "BarSoap": {
+  "Post": {
     "name": { "string": ["Teyer's", "Barz", "Sudz"] },
     "image": {
       "string": [
@@ -14,7 +14,7 @@
       ]
     }
   },
-  "LiquidSoap": {
+  "Comment": {
     "name": { "string": ["Polmoliv", "Cleanz", "Yawn"] },
     "image": {
       "string": [
