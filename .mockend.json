@@ -13,7 +13,6 @@
         "https://cdn11.bigcommerce.com/s-t0urwum501/images/stencil/500x500/products/2927/1401/apioq4yrk__35299.1605892049.jpg?c=2"
       ]
     },
-    "isBarOfSoap": { "boolean": true },
     "description": {
       "loremParagraphs": {
         "minLength": 10,
@@ -35,7 +34,6 @@
         "https://cdn.shopify.com/s/files/1/0550/5646/5954/products/LiquidSoap_FrangipaniGardenia_1_147cbe1d-935a-41e2-a6ba-5c550005cd3d_2048x.jpg?v=1649131242"
       ]
     },
-    "isBarOfSoap": { "boolean": false },
     "description": {
       "loremParagraphs": {
         "minLength": 25,
