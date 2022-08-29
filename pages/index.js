@@ -2,13 +2,19 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useQuery } from '@tanstack/react-query'
-import { liquidSoaps } from '../utils/data'
+import { getLiquids, getBars } from '../utils/api'
 
 export default function Home() {
-  const { data, isLoading } = useQuery(['liquidSoap'], () => liquidSoaps)
+  const { data: liquidSoaps, isLoading: loadingLiquidSoaps } = useQuery(
+    ['liquidSoaps'],
+    getLiquids
+  )
+  const { data: barsOfSoap, isLoading: loadingBarsOfSoap } = useQuery(
+    ['barsOfSoap'],
+    getBars
+  )
 
-  console.log({ data, isLoading })
-  if (isLoading) return 'Loading liquid soaps...'
+  if (loadingBarsOfSoap || loadingLiquidSoaps) return 'Loading...'
 
   return (
     <div className={styles.container}>
