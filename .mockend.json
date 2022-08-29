@@ -1,5 +1,5 @@
 {
-  "Post": {
+  "Test": {
     "name": { "string": ["Teyer's", "Barz", "Sudz"] },
     "image": {
       "string": [
@@ -14,7 +14,7 @@
       ]
     }
   },
-  "Comment": {
+  "What": {
     "name": { "string": ["Polmoliv", "Cleanz", "Yawn"] },
     "image": {
       "string": [
