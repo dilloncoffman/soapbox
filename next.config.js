@@ -15,7 +15,6 @@ const nextConfig = {
       'static6.depositphotos.com',
       'cloudinary.images-iherb.com',
       'images.unsplash.com',
-      'cdn2.vectorstock.com',
     ],
   },
 }
