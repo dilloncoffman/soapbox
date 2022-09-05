@@ -1,5 +1,6 @@
 {
   "Bar": {
+    "id": "uuid",
     "name": { "regexp": "[A-Z][a-z]{5,10}Bar" },
     "image": {
       "string": [
@@ -31,6 +32,7 @@
     }
   },
   "Liquid": {
+    "id": "uuid",
     "name": { "regexp": "[A-Z][a-z]{5,10}Liquid" },
     "image": {
       "string": [

@@ -17,12 +17,14 @@ export default function Products() {
 
   if (loadingBarsOfSoap || loadingLiquidSoaps) return <PageLoader />
 
+  const products = [...liquidSoaps, ...barsOfSoap]
+
   return (
     <Layout pageTitle='Products'>
       <Container my='lg'>
         <h1>Products</h1>
         <SimpleGrid cols={3} spacing='sm'>
-          {liquidSoaps?.map((liquidSoap) => (
+          {products?.map((liquidSoap) => (
             <ProductCard key={liquidSoap.id} product={liquidSoap} />
           ))}
         </SimpleGrid>
