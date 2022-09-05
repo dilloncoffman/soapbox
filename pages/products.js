@@ -1,36 +1,41 @@
-import { Container, SimpleGrid, Skeleton } from '@mantine/core'
-import { useQuery } from '@tanstack/react-query'
-import { getLiquids, getBars } from '../utils/api'
+import { Alert, Container, SimpleGrid } from '@mantine/core'
 import Layout from '../components/Layout/Layout'
 import PageLoader from '../components/Loaders/PageLoader'
 import ProductCard from '../components/ProductCard/ProductCard'
+import useFetchProducts from '../hooks/useFetchProducts'
+import { IconAlertCircle } from '@tabler/icons'
 
 export default function Products() {
-  const { data: liquidSoaps, isLoading: loadingLiquidSoaps } = useQuery(
-    ['liquidSoaps'],
-    getLiquids
-  )
-  const { data: barsOfSoap, isLoading: loadingBarsOfSoap } = useQuery(
-    ['barsOfSoap'],
-    getBars
-  )
+  const {
+    data: products,
+    error: errorGettingProducts,
+    isLoading: loadingProducts,
+  } = useFetchProducts()
 
-  if (loadingBarsOfSoap || loadingLiquidSoaps) return <PageLoader />
-
-  const products = [...liquidSoaps, ...barsOfSoap]
+  if (loadingProducts) return <PageLoader />
 
   return (
     <Layout pageTitle='Products'>
       <Container my='lg'>
         <h1>Products</h1>
-        <SimpleGrid cols={3} spacing='sm'>
-          {products?.map((product) => (
-            <ProductCard
-              key={`${product.name}-${product.id}`}
-              product={product}
-            />
-          ))}
-        </SimpleGrid>
+        {errorGettingProducts ? (
+          <Alert
+            icon={<IconAlertCircle size={16} />}
+            title='Bummer!'
+            color='red'
+          >
+            There was a problem getting products. ${error?.response?.message}
+          </Alert>
+        ) : (
+          <SimpleGrid cols={3} spacing='sm'>
+            {products?.map((product) => (
+              <ProductCard
+                key={`${product.name}-${product.id}`}
+                product={product}
+              />
+            ))}
+          </SimpleGrid>
+        )}
       </Container>
     </Layout>
   )
