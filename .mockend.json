@@ -1,7 +1,6 @@
 {
   "Bar": {
     "name": { "regexp": "[A-Z][a-z]{5,10}Bar" },
-    "price": { "regexp": "$([1-9]{1,3}(,d{3}){0,3}|([1-9]{1,3}))(.d{2})?" },
     "image": {
       "string": [
         "http://cdn.shopify.com/s/files/1/1704/0849/products/DishBar.jpg?v=1607707255",
@@ -11,19 +10,28 @@
         "https://pyxis.nymag.com/v1/imgs/957/9ae/68c6924a91715c39dc55ffcd8cb9348e4b-soap-lede.rsocial.w1200.jpg",
         "https://cdnimg.webstaurantstore.com/images/products/large/611962/2204457.jpg",
         "https://cdn.shopify.com/s/files/1/0064/1974/2773/products/Herbivore_EmeraldCBD_Soap_Main.jpg?v=1587148308",
-        "https://cdn11.bigcommerce.com/s-t0urwum501/images/stencil/500x500/products/2927/1401/apioq4yrk__35299.1605892049.jpg?c=2"
+        "https://cdn11.bigcommerce.com/s-t0urwum501/images/stencil/500x500/products/2927/1401/apioq4yrk__35299.1605892049.jpg?c=2",
+        "https://images.unsplash.com/photo-1584305574647-0cc949a2bb9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+        "https://images.unsplash.com/photo-1607006344380-b6775a0824a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=882&q=80",
+        "https://images.unsplash.com/photo-1612800083273-24ea5c80313d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80",
+        "https://images.unsplash.com/photo-1661450159193-633134194753?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80",
+        "https://images.unsplash.com/photo-1585145868057-135bf14b0503?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "https://images.unsplash.com/photo-1614530966816-93958dd5d9c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80",
+        "https://images.unsplash.com/photo-1648717255795-87a9103cd36e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1712&q=80",
+        "https://images.unsplash.com/photo-1614530968358-4f14053fbd78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80",
+        "https://images.unsplash.com/photo-1607006344336-55d6e178f017?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "https://images.unsplash.com/photo-1651423128873-f526ba951eef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
       ]
     },
     "description": {
       "loremParagraphs": {
-        "minLength": 10,
-        "maxLength": 100
+        "minLength": 25,
+        "maxLength": 150
       }
     }
   },
   "Liquid": {
     "name": { "regexp": "[A-Z][a-z]{5,10}Liquid" },
-    "price": { "regexp": "$([1-9]{1,3}(,d{3}){0,3}|([1-9]{1,3}))(.d{2})?" },
     "image": {
       "string": [
         "https://thethingswellmake.com/wp-content/uploads/2016/06/219-diy-homemade-liquid-coconut-oil-soap-recipe-4-2.jpg",
@@ -33,7 +41,17 @@
         "https://static6.depositphotos.com/1003860/666/i/450/depositphotos_6664343-stock-photo-soap-liquid-and-bars.jpg",
         "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/amp/amp00030/l/23.jpg",
         "https://cdn.shopify.com/s/files/1/2281/5333/products/1-Soap-M_650x650.jpg?v=1586073255",
-        "https://cdn.shopify.com/s/files/1/0550/5646/5954/products/LiquidSoap_FrangipaniGardenia_1_147cbe1d-935a-41e2-a6ba-5c550005cd3d_2048x.jpg?v=1649131242"
+        "https://cdn.shopify.com/s/files/1/0550/5646/5954/products/LiquidSoap_FrangipaniGardenia_1_147cbe1d-935a-41e2-a6ba-5c550005cd3d_2048x.jpg?v=1649131242",
+        "https://images.unsplash.com/photo-1630398917451-1a409990fbc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "https://images.unsplash.com/photo-1643123158622-cd757dce7cfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+        "https://images.unsplash.com/photo-1661251024501-d0d24929e0fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+        "https://images.unsplash.com/photo-1592212040600-6fb85d6e78df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80",
+        "https://images.unsplash.com/photo-1519666251146-8e16c5518edd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "https://images.unsplash.com/photo-1645567455251-334ed4702f9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80",
+        "https://images.unsplash.com/photo-1601092404239-a24544fb387c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80",
+        "https://images.unsplash.com/photo-1645724467678-b0687d2958ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=676&q=80",
+        "https://images.unsplash.com/photo-1614806686974-4d53169a47cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "https://images.unsplash.com/photo-1643716991729-0b3525fe8426?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
       ]
     },
     "description": {
