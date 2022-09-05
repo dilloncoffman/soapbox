@@ -22,8 +22,8 @@ export default function Products() {
       <Container my='lg'>
         <h1>Products</h1>
         <SimpleGrid cols={3} spacing='sm'>
-          {barsOfSoap?.map((bar) => (
-            <ProductCard key={bar.id} product={bar} />
+          {liquidSoaps?.map((liquidSoap) => (
+            <ProductCard key={liquidSoap.id} product={liquidSoap} />
           ))}
         </SimpleGrid>
       </Container>

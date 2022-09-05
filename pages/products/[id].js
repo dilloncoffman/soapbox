@@ -19,15 +19,6 @@ export default function Product({ product, hasError }) {
   return (
     <Layout pageTitle={product.name}>
       <Container my='lg'>
-        {/* <h1>{product.name}</h1>
-        <p>{product.description}</p>
-        <Image
-          src={product.image}
-          alt='Picture of the author'
-          width={500}
-          height={500}
-          layout='responsive'
-        /> */}
         <ProductSpotlight product={product} />
       </Container>
     </Layout>
@@ -35,7 +26,7 @@ export default function Product({ product, hasError }) {
 }
 
 export async function getStaticPaths() {
-  const { data: products } = await axiosClient.get('/data/bars.json')
+  const { data: products } = await axiosClient.get('/data/liquids.json')
 
   const paths = products.map((product) => ({
     params: { id: product.id.toString() },
@@ -46,7 +37,7 @@ export async function getStaticPaths() {
 
 export const getStaticProps = async (context) => {
   const productId = context.params?.id
-  const { data: products } = await axiosClient.get('/data/bars.json')
+  const { data: products } = await axiosClient.get('/data/liquids.json')
 
   const foundProduct = products.find((item) => productId === item.id.toString())
 
