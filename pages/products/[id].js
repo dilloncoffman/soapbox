@@ -26,10 +26,15 @@ export default function Product({ product, hasError }) {
 }
 
 export async function getStaticPaths() {
-  const { data: products } = await axiosClient.get('/data/liquids.json')
+  const { data: liquidSoapProducts } = await axiosClient.get(
+    '/data/liquids.json'
+  )
+  const { data: barSoapProducts } = await axiosClient.get('/data/bars.json')
+
+  const products = [...liquidSoapProducts, ...barSoapProducts]
 
   const paths = products.map((product) => ({
-    params: { id: product.id.toString() },
+    params: { id: `${product.name}-${product.id}` },
   }))
 
   return { paths, fallback: false }
@@ -37,9 +42,16 @@ export async function getStaticPaths() {
 
 export const getStaticProps = async (context) => {
   const productId = context.params?.id
-  const { data: products } = await axiosClient.get('/data/liquids.json')
+  const { data: liquidSoapProducts } = await axiosClient.get(
+    '/data/liquids.json'
+  )
+  const { data: barSoapProducts } = await axiosClient.get('/data/bars.json')
 
-  const foundProduct = products.find((item) => productId === item.id.toString())
+  const products = [...liquidSoapProducts, ...barSoapProducts]
+
+  const foundProduct = products.find(
+    (product) => productId === `${product.name}-${product.id}`
+  )
 
   if (!foundProduct) {
     return {

@@ -24,8 +24,11 @@ export default function Products() {
       <Container my='lg'>
         <h1>Products</h1>
         <SimpleGrid cols={3} spacing='sm'>
-          {products?.map((liquidSoap) => (
-            <ProductCard key={liquidSoap.id} product={liquidSoap} />
+          {products?.map((product) => (
+            <ProductCard
+              key={`${product.name}-${product.id}`}
+              product={product}
+            />
           ))}
         </SimpleGrid>
       </Container>
