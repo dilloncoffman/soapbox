@@ -7,16 +7,32 @@ export default function ProductCard({ product }) {
       p='xl'
       component='a'
       href={`/products/${product.name}-${product.id}`}
+      sx={{ minHeight: 281 }}
     >
       <Card.Section>
-        <Image src={product.image} height={160} alt={product.name} />
+        <Image
+          withPlaceholder
+          src={product.image}
+          height={160}
+          alt={product.name}
+        />
       </Card.Section>
 
       <Text weight={500} size='lg' mt='md'>
         {product.name}
       </Text>
 
-      <Text mt='xs' color='dimmed' size='sm'>
+      <Text
+        mt='xs'
+        color='dimmed'
+        size='sm'
+        sx={{
+          overflow: 'hidden',
+          display: '-webkit-box',
+          WebkitLineClamp: '2',
+          WebkitBoxOrient: 'vertical',
+        }}
+      >
         {product.description}
       </Text>
     </Card>

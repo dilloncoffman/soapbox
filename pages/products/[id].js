@@ -1,9 +1,9 @@
 import { Container } from '@mantine/core'
 import { axiosClient } from '../../utils/axiosClient'
 import { useRouter } from 'next/router'
-import Image from 'next/image'
 import Layout from '../../components/Layout/Layout'
 import ProductSpotlight from '../../components/ProductSpotlight/ProductSpotlight'
+import AliveProductGrid from '../../components/AliveProductGrid/AliveProductGrid'
 
 export default function Product({ product, hasError }) {
   const router = useRouter()
@@ -20,6 +20,10 @@ export default function Product({ product, hasError }) {
     <Layout pageTitle={product.name}>
       <Container my='lg'>
         <ProductSpotlight product={product} />
+        <div>
+          <h2>You might like these products...</h2>
+          <AliveProductGrid />
+        </div>
       </Container>
     </Layout>
   )
