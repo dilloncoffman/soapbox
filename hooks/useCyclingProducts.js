@@ -15,7 +15,7 @@ const useCyclingProducts = (delay = 3000) => {
   }
 
   useEffect(() => {
-    const cycledProductsTimeout = setTimeout(() => cycleProducts(), delay)
+    const cycledProductsTimeout = setTimeout(cycleProducts, delay)
 
     return () => clearTimeout(cycledProductsTimeout)
   })
