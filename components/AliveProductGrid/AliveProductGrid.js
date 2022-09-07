@@ -7,7 +7,15 @@ export default function AliveProductGrid() {
   const cycledProductsExist = cycledProducts?.length > 0
 
   return (
-    <SimpleGrid cols={cycledProductsExist ? 3 : 1} spacing='sm'>
+    <SimpleGrid
+      breakpoints={[
+        { maxWidth: 980, cols: 3 },
+        { maxWidth: 755, cols: 2 },
+        { maxWidth: 600, cols: 1 },
+      ]}
+      cols={cycledProductsExist ? 3 : 1}
+      spacing='sm'
+    >
       {cycledProductsExist ? (
         <>
           {cycledProducts?.map((product) => (

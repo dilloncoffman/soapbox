@@ -4,6 +4,7 @@ import PageLoader from '../components/Loaders/PageLoader'
 import ProductCard from '../components/ProductCard/ProductCard'
 import useFetchProducts from '../hooks/useFetchProducts'
 import { IconAlertCircle } from '@tabler/icons'
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 
 export default function Products() {
   const {
@@ -27,14 +28,17 @@ export default function Products() {
             There was a problem getting products. ${error?.response?.message}
           </Alert>
         ) : (
-          <SimpleGrid cols={3} spacing='sm'>
-            {products?.map((product) => (
-              <ProductCard
-                key={`${product.name}-${product.id}`}
-                product={product}
-              />
-            ))}
-          </SimpleGrid>
+          <>
+            <ScrollToTop />
+            <SimpleGrid cols={3} spacing='sm'>
+              {products?.map((product) => (
+                <ProductCard
+                  key={`${product.name}-${product.id}`}
+                  product={product}
+                />
+              ))}
+            </SimpleGrid>
+          </>
         )}
       </Container>
     </Layout>
