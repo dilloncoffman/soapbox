@@ -4,6 +4,8 @@ import { useRouter } from 'next/router'
 import Layout from '../../components/Layout/Layout'
 import ProductSpotlight from '../../components/ProductSpotlight/ProductSpotlight'
 import AliveProductGrid from '../../components/AliveProductGrid/AliveProductGrid'
+import FAQ from '../../components/FAQ/FAQ'
+import ScrollToTop from '../../components/ScrollToTop/ScrollToTop'
 
 export default function Product({ product, hasError }) {
   const router = useRouter()
@@ -18,6 +20,7 @@ export default function Product({ product, hasError }) {
 
   return (
     <Layout pageTitle={product.name}>
+      <ScrollToTop />
       <Container my='lg'>
         <ProductSpotlight product={product} />
         <div>
@@ -25,6 +28,7 @@ export default function Product({ product, hasError }) {
           <AliveProductGrid />
         </div>
       </Container>
+      <FAQ />
     </Layout>
   )
 }
